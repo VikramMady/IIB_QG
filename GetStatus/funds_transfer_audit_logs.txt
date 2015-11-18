@@ -1,0 +1,22 @@
+drop table funds_transfer_audit_logs;
+
+create table funds_transfer_audit_logs
+(
+  ID                   NUMBER(38) not null,
+  FUNDS_TRANSFER_ID    NUMBER(38),
+  REQUEST_BITSTREAM    CLOB,
+  REPLY_BITSTREAM      CLOB
+);
+
+alter table funds_transfer_audit_logs add primary key (ID);
+
+create unique index funds_transfer_audit_logs_01 on funds_transfer_audit_logs(funds_transfer_id);
+
+drop sequence funds_transfer_audit_logs_seq;
+
+create sequence funds_transfer_audit_logs_seq
+minvalue 1
+maxvalue 9999999999999999999999999999
+start with 10000
+increment by 1
+cache 20;
