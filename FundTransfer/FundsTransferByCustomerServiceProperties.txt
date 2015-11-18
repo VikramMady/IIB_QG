@@ -1,0 +1,16 @@
+mqsicreateconfigurableservice IB9NODE -c UserDefined -o FundsTransferByCustomerService
+mqsichangeproperties IB9NODE -c UserDefined -o FundsTransferByCustomerService -n auditSchemaName -v inw
+mqsichangeproperties IB9NODE -c UserDefined -o FundsTransferByCustomerService -n auditDataSourceName -v FUNDSXFER_AUDIT
+mqsichangeproperties IB9NODE -c UserDefined -o FundsTransferByCustomerService -n fundsXferSchemaName -v inw
+mqsichangeproperties IB9NODE -c UserDefined -o FundsTransferByCustomerService -n fundsXferDataSourceName -v FUNDSXFER
+mqsichangeproperties IB9NODE -c UserDefined -o FundsTransferByCustomerService -n flexSchemaName -v esbviewer
+mqsichangeproperties IB9NODE -c UserDefined -o FundsTransferByCustomerService -n flexDataSourceName -v FCR
+mqsichangeproperties IB9NODE -c UserDefined -o FundsTransferByCustomerService -n atomSchemaName -v esbviewer
+mqsichangeproperties IB9NODE -c UserDefined -o FundsTransferByCustomerService -n atomDataSourceName -v ATOM
+mqsichangeproperties IB9NODE -c UserDefined -o FundsTransferByCustomerService -n validateCustomerIdentity -v FALSE
+mqsichangeproperties IB9NODE -c UserDefined -o FundsTransferByCustomerService -n setSfmsNamespaceInSubStatusCode -v TRUE
+mqsichangeproperties IB9NODE -c UserDefined -o FundsTransferByCustomerService -n setAtomNamespaceInSubStatusCode -v TRUE
+mqsichangeproperties IB9NODE -c UserDefined -o FundsTransferByCustomerService -n setFlexNamespaceInSubStatusCode -v TRUE
+mqsichangeproperties IB9NODE -c UserDefined -o FundsTransferByCustomerService -n setNpciNamespaceInSubStatusCode -v TRUE
+mqsichangeproperties IB9NODE -c UserDefined -o FundsTransferByCustomerService -n atomVendorID -v hermsi
+mqsichangeproperties IB9NODE -c UserDefined -o FundsTransferByCustomerService -n atomVendorPassword -v hermsi
