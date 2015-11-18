@@ -1,4 +1,4 @@
-drop table funds_transfer_audit_logs;
+drop table funds_transfer_audit_logs; jnjjjjlknkljnl
 
 create table funds_transfer_audit_logs
 (
