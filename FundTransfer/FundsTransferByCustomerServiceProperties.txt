@@ -1,4 +1,5 @@
 hi
+hi hi
 mqsicreateconfigurableservice IB9NODE -c UserDefined -o FundsTransferByCustomerService
 mqsichangeproperties IB9NODE -c UserDefined -o FundsTransferByCustomerService -n auditSchemaName -v inw
 mqsichangeproperties IB9NODE -c UserDefined -o FundsTransferByCustomerService -n auditDataSourceName -v FUNDSXFER_AUDIT
